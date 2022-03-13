@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/basket"
+            android:title="koszyk"
+            android:onClick="OnOptionsItemSelected"
+            />
+
+        <item android:title="Produkty">
+            <menu>
+                <item
+                    android:id="@+id/pc"
+                    android:title="Komputery"
+                    android:onClick="OnOptionsItemSelected"
+                    />
+                <item
+                    android:id="@+id/mouse"
+                    android:title="Myszki"
+                    android:onClick="OnOptionsItemSelected"
+
+                    />
+                <item
+                    android:id="@+id/screen"
+                    android:title="Monitory"
+                    android:onClick="OnOptionsItemSelected"
+                    />
+                <item
+                    android:id="@+id/keyboards"
+                    android:title="Klawiatury"
+                    android:onClick="OnOptionsItemSelected"
+                    />
+            </menu>
+        </item>
+
+    <item android:title="Informacje">
+        <menu>
+        <item android:id="@+id/info"
+            android:title="O Aplikacji"
+            android:onClick="OnOptionsItemSelected"
+/>
+        </menu>
+    </item>
+    </group>
+
+</menu>

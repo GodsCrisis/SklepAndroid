@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BasketActivity">
+
+    <ListView
+        android:id="@+id/simple_list_view"
+        android:layout_width="wrap_content"
+        android:layout_height="500dp"
+        android:divider="#4CAF50"
+        android:dividerHeight="2dp"
+        android:listSelector="#FFC107">
+
+    </ListView>
+    <TextView
+        android:layout_width="175dp"
+        android:layout_height="50dp"
+        android:text="Cena za całość"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:layout_below="@id/simple_list_view"
+        android:id="@+id/cena_za_calosc_tekst"/>
+    <TextView
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/simple_list_view"
+        android:id="@+id/cena_za_calosc"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:layout_toRightOf="@id/cena_za_calosc_tekst"
+        android:textColor="@color/black"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/cena_za_calosc_tekst"
+        android:id="@+id/kup"
+        android:text="Kup"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/kup"
+        android:id="@+id/imie"
+        android:hint="Emial zamawiającego"/>
+
+
+</RelativeLayout>
